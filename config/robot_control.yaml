@@ -1,0 +1,31 @@
+kana:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Effort Controllers ---------------------------------------
+  # front_wheel_joint_effort_controller:
+  #   type: effort_controllers/JointEffortController
+  #   joint: front_wheel_joint
+  #   # pid: {p: 100.0, i: 0.01, d: 1.0}
+
+  front_left_wheel_joint_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: rear_left_wheel_joint
+    # pid: {p: 100.0, i: 0.01, d: 1.0}
+  
+  front_right_wheel_joint_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: rear_right_wheel_joint
+    # pid: {p: 100.0, i: 0.01, d: 1.0}
+    
+  rear_left_wheel_joint_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: rear_left_wheel_joint
+    # pid: {p: 100.0, i: 0.01, d: 1.0}
+  
+  rear_right_wheel_joint_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: rear_right_wheel_joint
+    # pid: {p: 100.0, i: 0.01, d: 1.0}
