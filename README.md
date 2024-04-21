@@ -10,3 +10,6 @@ Steps to run the project:
 3. Build the workspace with catkin_make from the root of your workspace
 4. Connect the hardware system to the PC i.e, Arduino UNO
 5. Start the sytem by running roslaunch warehouse_automation warehouse2_gazebo.launch
+
+## Youtube video link:
+https://www.youtube.com/watch?v=O0HPE9rvYYI
